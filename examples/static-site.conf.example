@@ -1,0 +1,20 @@
+# Ejemplo didactico, requiere certificados y rutas propios
+server {
+    listen 80;
+    server_name portfolio.example.com;
+    return 301 https://$host$request_uri;
+}
+server {
+    listen 443 ssl;
+    server_name portfolio.example.com;
+    root /var/www/portfolio-demo/public;
+    index index.html;
+    ssl_certificate /RUTA/AL/CERTIFICADO/fullchain.pem;
+    ssl_certificate_key /RUTA/A/CLAVE/privkey.pem;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    location ~ /\. {
+        deny all;
+    }
+}
