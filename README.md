@@ -13,6 +13,7 @@ El repositorio documenta decisiones de arquitectura, cambios controlados, verifi
 - [Firewall y servicios](docs/05-firewall-servicios.md)
 - [Despliegue del portfolio y DNS](docs/06-despliegue-portfolio.md)
 - [Verificaciones, alcance y pendientes](docs/07-verificaciones-pendientes.md)
+- [Mantenimiento y actualización de Ubuntu Server](docs/08-mantenimiento-actualizaciones.md)
 - [Política de publicación segura](SECURITY.md)
 
 Los archivos de `examples/` son ilustrativos y **no reproducen** la configuración real del servidor
